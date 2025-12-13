@@ -149,6 +149,9 @@ Thumbs.db
 config_local.json
 *.log
 
+# Test implementations
+tests/
+
 # Media/assets that might be generated
 *.mp4
 *.avi
