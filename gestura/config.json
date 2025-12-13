@@ -1,5 +1,5 @@
 {
-  "sensitivity": 0.21806083650190117,
+  "sensitivity": 0.7,
   "click_threshold": 25,
   "voice_enabled": true,
   "mode": "general"

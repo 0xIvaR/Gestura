@@ -1,0 +1,336 @@
+{
+  "designSystem": {
+    "name": "Gestura UI Design System",
+    "style": "Modern Glassmorphism with Gradient Mesh",
+    "version": "1.0.0",
+    
+    "colorPalette": {
+      "background": {
+        "gradientMesh": {
+          "type": "multi-directional-gradient",
+          "colors": [
+            "#FFE4D6",
+            "#FFDAB9", 
+            "#98E4D6",
+            "#A8E6CF",
+            "#7FCDBB",
+            "#FFD3B6"
+          ],
+          "style": "organic-blob",
+          "description": "Soft, organic gradient mesh creating aurora-like effect"
+        }
+      },
+      "surfaces": {
+        "glass": {
+          "background": "rgba(255, 255, 255, 0.25)",
+          "backdropFilter": "blur(20px)",
+          "border": "1px solid rgba(255, 255, 255, 0.3)"
+        },
+        "glassHeavy": {
+          "background": "rgba(255, 255, 255, 0.4)",
+          "backdropFilter": "blur(25px)",
+          "border": "1px solid rgba(255, 255, 255, 0.4)"
+        }
+      },
+      "text": {
+        "primary": "#1A1A1A",
+        "secondary": "#4A4A4A",
+        "muted": "#6B6B6B"
+      },
+      "interactive": {
+        "buttonPrimary": {
+          "background": "rgba(127, 205, 187, 0.8)",
+          "hover": "rgba(127, 205, 187, 0.9)",
+          "text": "#1A1A1A"
+        },
+        "statusBar": {
+          "background": "rgba(173, 216, 230, 0.6)",
+          "text": "#2C2C2C"
+        }
+      }
+    },
+    
+    "typography": {
+      "fontFamily": {
+        "primary": "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif"
+      },
+      "brandName": {
+        "fontSize": "32px",
+        "fontWeight": "600",
+        "letterSpacing": "-0.02em",
+        "textTransform": "uppercase"
+      },
+      "sectionTitle": {
+        "fontSize": "24px",
+        "fontWeight": "500",
+        "letterSpacing": "-0.01em"
+      },
+      "labelText": {
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "letterSpacing": "0"
+      },
+      "smallText": {
+        "fontSize": "14px",
+        "fontWeight": "400"
+      },
+      "statusText": {
+        "fontSize": "16px",
+        "fontWeight": "500"
+      }
+    },
+    
+    "layout": {
+      "structure": {
+        "type": "sidebar-with-main-content",
+        "sidebar": {
+          "position": "left",
+          "width": "180px",
+          "alignment": "top"
+        },
+        "mainContent": {
+          "type": "centered-card",
+          "maxWidth": "900px",
+          "verticalAlignment": "center"
+        },
+        "statusBar": {
+          "position": "bottom",
+          "type": "full-width",
+          "height": "60px"
+        }
+      },
+      "spacing": {
+        "containerPadding": "40px",
+        "sectionGap": "32px",
+        "elementGap": "24px",
+        "innerPadding": "32px",
+        "compactPadding": "16px"
+      },
+      "grid": {
+        "columns": "12",
+        "gap": "24px"
+      }
+    },
+    
+    "components": {
+      "card": {
+        "style": "glassmorphic",
+        "borderRadius": "24px",
+        "padding": "32px",
+        "shadow": "0 8px 32px rgba(0, 0, 0, 0.08)",
+        "background": "rgba(255, 255, 255, 0.3)",
+        "backdropFilter": "blur(20px)",
+        "border": "1px solid rgba(255, 255, 255, 0.4)"
+      },
+      
+      "sidebar": {
+        "style": "glassmorphic-light",
+        "borderRadius": "20px",
+        "padding": "24px 16px",
+        "background": "rgba(255, 255, 255, 0.25)",
+        "backdropFilter": "blur(15px)"
+      },
+      
+      "navigationItem": {
+        "display": "flex",
+        "flexDirection": "column",
+        "alignItems": "center",
+        "padding": "16px",
+        "gap": "8px",
+        "borderRadius": "12px",
+        "hoverEffect": {
+          "background": "rgba(255, 255, 255, 0.2)",
+          "transition": "all 0.2s ease"
+        },
+        "icon": {
+          "size": "24px",
+          "strokeWidth": "1.5px",
+          "style": "outline"
+        },
+        "label": {
+          "fontSize": "14px",
+          "fontWeight": "500"
+        }
+      },
+      
+      "slider": {
+        "height": "6px",
+        "borderRadius": "3px",
+        "track": {
+          "background": "rgba(200, 200, 200, 0.3)"
+        },
+        "fill": {
+          "background": "rgba(150, 150, 150, 0.6)"
+        },
+        "thumb": {
+          "size": "18px",
+          "borderRadius": "50%",
+          "background": "rgba(255, 255, 255, 0.9)",
+          "shadow": "0 2px 8px rgba(0, 0, 0, 0.15)"
+        }
+      },
+      
+      "toggle": {
+        "width": "48px",
+        "height": "28px",
+        "borderRadius": "14px",
+        "padding": "2px",
+        "background": {
+          "off": "rgba(200, 200, 200, 0.3)",
+          "on": "rgba(127, 205, 187, 0.6)"
+        },
+        "thumb": {
+          "size": "24px",
+          "background": "white",
+          "shadow": "0 2px 4px rgba(0, 0, 0, 0.2)",
+          "transition": "transform 0.2s ease"
+        }
+      },
+      
+      "button": {
+        "primary": {
+          "borderRadius": "16px",
+          "padding": "16px 32px",
+          "fontSize": "18px",
+          "fontWeight": "500",
+          "background": "rgba(127, 205, 187, 0.7)",
+          "backdropFilter": "blur(10px)",
+          "border": "1px solid rgba(255, 255, 255, 0.3)",
+          "shadow": "0 4px 16px rgba(127, 205, 187, 0.2)",
+          "hover": {
+            "background": "rgba(127, 205, 187, 0.85)",
+            "transform": "translateY(-1px)",
+            "shadow": "0 6px 20px rgba(127, 205, 187, 0.3)"
+          },
+          "icon": {
+            "position": "left",
+            "gap": "12px",
+            "size": "20px"
+          }
+        }
+      },
+      
+      "statusBar": {
+        "height": "60px",
+        "borderRadius": "30px",
+        "padding": "0 32px",
+        "background": "rgba(173, 216, 230, 0.5)",
+        "backdropFilter": "blur(15px)",
+        "display": "flex",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "gap": "24px",
+        "separator": {
+          "width": "1px",
+          "height": "24px",
+          "background": "rgba(0, 0, 0, 0.1)"
+        },
+        "statusIndicator": {
+          "icon": "circle",
+          "size": "8px",
+          "color": {
+            "ready": "#7FCDBB",
+            "active": "#4CAF50",
+            "error": "#FF6B6B"
+          }
+        }
+      }
+    },
+    
+    "effects": {
+      "glassmorphism": {
+        "light": {
+          "background": "rgba(255, 255, 255, 0.25)",
+          "backdropFilter": "blur(15px)",
+          "border": "1px solid rgba(255, 255, 255, 0.3)"
+        },
+        "medium": {
+          "background": "rgba(255, 255, 255, 0.35)",
+          "backdropFilter": "blur(20px)",
+          "border": "1px solid rgba(255, 255, 255, 0.4)"
+        },
+        "heavy": {
+          "background": "rgba(255, 255, 255, 0.45)",
+          "backdropFilter": "blur(25px)",
+          "border": "1px solid rgba(255, 255, 255, 0.5)"
+        }
+      },
+      "shadows": {
+        "soft": "0 4px 16px rgba(0, 0, 0, 0.08)",
+        "medium": "0 8px 32px rgba(0, 0, 0, 0.12)",
+        "large": "0 16px 48px rgba(0, 0, 0, 0.16)"
+      },
+      "transitions": {
+        "fast": "all 0.15s ease",
+        "medium": "all 0.25s ease",
+        "slow": "all 0.35s ease"
+      }
+    },
+    
+    "animations": {
+      "fadeIn": {
+        "duration": "0.3s",
+        "easing": "ease-out"
+      },
+      "slideUp": {
+        "duration": "0.4s",
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+      },
+      "pulse": {
+        "duration": "2s",
+        "iteration": "infinite",
+        "description": "Subtle pulsing for status indicators"
+      }
+    },
+    
+    "responsive": {
+      "breakpoints": {
+        "mobile": "640px",
+        "tablet": "768px",
+        "desktop": "1024px",
+        "wide": "1280px"
+      },
+      "behavior": {
+        "sidebar": {
+          "mobile": "hidden or drawer",
+          "tablet": "collapsed with icons only",
+          "desktop": "full width with labels"
+        },
+        "cards": {
+          "mobile": "full width with 16px margin",
+          "tablet": "90% width centered",
+          "desktop": "fixed max-width centered"
+        }
+      }
+    },
+    
+    "accessibility": {
+      "focusIndicator": {
+        "outline": "2px solid rgba(127, 205, 187, 0.8)",
+        "outlineOffset": "2px"
+      },
+      "contrastRatios": {
+        "normalText": "4.5:1",
+        "largeText": "3:1"
+      },
+      "interactive": {
+        "minTouchTarget": "44px",
+        "keyboardNavigation": "supported",
+        "screenReaderLabels": "required"
+      }
+    },
+    
+    "implementation": {
+      "cssFramework": "Tailwind CSS or custom CSS",
+      "suggestedLibraries": [
+        "Framer Motion (animations)",
+        "React Spring (physics-based animations)",
+        "CSS backdrop-filter (glassmorphism)"
+      ],
+      "browserSupport": {
+        "backdropFilter": "Use fallback for older browsers",
+        "gradientMesh": "CSS gradients or SVG filters"
+      }
+    }
+  }
+}

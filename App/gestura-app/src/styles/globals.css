@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --glass-bg: rgba(255, 255, 255, 0.3);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.4);
+  --glass-blur: blur(20px);
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: theme('fontFamily.sans');
+  color: theme('colors.text.primary');
+  background: transparent;
+}
+
+.gradient-background {
+  background: linear-gradient(135deg,
+    #667eea 0%,
+    #764ba2 25%,
+    #f093fb 50%,
+    #f5576c 75%,
+    #4facfe 100%
+  );
+}
+
+.gradient-animated {
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.glass-card {
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  border: var(--glass-border);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+/* Input range dynamic fill using CSS custom property */
+.range-filled {
+  background-image: linear-gradient(
+    to right,
+    rgba(150, 150, 150, 0.6) var(--value, 50%),
+    rgba(200, 200, 200, 0.3) var(--value, 50%)
+  );
+}
+
+.status-bar {
+  background: rgba(173, 216, 230, 0.5);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  border-radius: 30px;
+}
+
+.focus-outline:focus-visible {
+  outline: 2px solid rgba(127, 205, 187, 0.8);
+  outline-offset: 2px;
+}
+
+/* Typography helpers aligned with design system */
+.brand-title {
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.section-title {
+  letter-spacing: -0.01em;
+}
+
+/* Primary action button variants (glass + brand color) */
+.btn-primary {
+  background: rgba(127, 205, 187, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.btn-primary--active {
+  background: rgba(127, 205, 187, 0.85);
+}
+
+
