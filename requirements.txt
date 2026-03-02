@@ -1,9 +1,12 @@
 pydantic
 fastapi
-opencv-python
-mediapipe
+opencv-python>=4.8,<4.11
+mediapipe>=0.10,<0.11
 pyautogui
 pyttsx3
 speechrecognition
 pytest
-pyinstaller 
+pyinstaller
+Pillow
+protobuf>=3.20,<5
+numpy>=1.24,<2
